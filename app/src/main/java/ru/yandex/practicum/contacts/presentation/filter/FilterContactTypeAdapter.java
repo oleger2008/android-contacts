@@ -90,7 +90,7 @@ public class FilterContactTypeAdapter extends RecyclerView.Adapter<FilterContact
 
         @Override
         public boolean areItemsTheSame(@NonNull FilterContactTypeUi oldItem, @NonNull FilterContactTypeUi newItem) {
-            return oldItem.getContactType() == newItem.getContactType();
+            return oldItem.theSameAs(newItem);
         }
 
         @Override
